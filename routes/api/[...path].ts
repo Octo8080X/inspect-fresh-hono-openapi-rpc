@@ -26,7 +26,7 @@ const route = createRoute({
           schema: HeloWorldSchema,
         },
       },
-      description: "Retrieve the user",
+      description: "Hello World!",
     },
   },
 });
