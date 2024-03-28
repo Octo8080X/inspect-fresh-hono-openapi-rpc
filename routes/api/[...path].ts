@@ -5,7 +5,7 @@ const ParamsSchema = z.object({});
 
 console.log(z.string());
 
-const HeloWorldSchema = z
+const HelloWorldSchema = z
   .object({
     message: z.string().openapi({
       example: "Hello World!",
@@ -23,7 +23,7 @@ const route = createRoute({
     200: {
       content: {
         "application/json": {
-          schema: HeloWorldSchema,
+          schema: HelloWorldSchema,
         },
       },
       description: "Hello World!",
