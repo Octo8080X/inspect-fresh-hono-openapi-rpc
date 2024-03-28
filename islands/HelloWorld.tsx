@@ -1,5 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
-import { hc } from "$hono/mod.ts";
+import { hc } from "hono/client";
 import type { AppRoutesType } from "../routes/api/[...path].ts";
 const client = hc<AppRoutesType>("http://localhost:8000/");
 
