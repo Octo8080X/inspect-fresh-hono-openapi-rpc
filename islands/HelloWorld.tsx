@@ -8,7 +8,7 @@ export default function HelloWorld() {
 
   useEffect(() => {
     const call = async () => {
-      const response = await client.api.hello_world.$get();
+      const response = await client.api.hello_world.$get({ param: {} });
       const data = await response.json();
       setMessage(data.message);
     };
